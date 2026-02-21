@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xGenie - Security Intelligence Platform</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>xGenie</h1>
+                <p class="tagline">Security Intelligence Platform</p>
+            </div>
+            <div class="warning">
+                <span class="warning-icon">⚠</span>
+                <span>Authorized Use Only</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="scan-input">
+                <div class="input-group">
+                    <input type="text" id="target" placeholder="Enter domain or IP address" />
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="deepScan" />
+                        <span>Deep Scan (includes XSS detection)</span>
+                    </label>
+                    <button id="scanBtn" onclick="startScan()">Start Reconnaissance</button>
+                </div>
+            </section>
+
+            <section id="scanProgress" class="scan-progress hidden">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <p id="progressText">Initializing scan...</p>
+            </section>
+
+            <section id="results" class="results hidden">
+                <div class="results-header">
+                    <h2>Scan Results</h2>
+                    <button onclick="exportResults()">Export JSON</button>
+                </div>
+
+                <div class="results-grid">
+                    <div class="result-card" id="whoisCard">
+                        <h3>WHOIS Intelligence</h3>
+                        <div id="whoisData" class="card-content"></div>
+                    </div>
+
+                    <div class="result-card" id="dnsCard">
+                        <h3>DNS Records</h3>
+                        <div id="dnsData" class="card-content"></div>
+                    </div>
+
+                    <div class="result-card" id="portsCard">
+                        <h3>Open Ports</h3>
+                        <div id="portsData" class="card-content"></div>
+                    </div>
+
+                    <div class="result-card" id="techCard">
+                        <h3>Technology Stack</h3>
+                        <div id="techData" class="card-content"></div>
+                    </div>
+
+                    <div class="result-card" id="securityCard">
+                        <h3>Security Analysis</h3>
+                        <div id="securityData" class="card-content"></div>
+                    </div>
+
+                    <div class="result-card" id="xssCard">
+                        <h3>XSS Detection</h3>
+                        <div id="xssData" class="card-content"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>xGenie v1.0.0 | For authorized security assessments only</p>
+        </footer>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

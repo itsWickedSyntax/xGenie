@@ -1,0 +1,48 @@
+.TH XGENIE 1 "2024" "xGenie 1.0.0" "User Commands"
+.SH NAME
+xgenie \- Security Intelligence Platform
+.SH SYNOPSIS
+.B xgenie
+.I scan
+.I <target>
+[OPTIONS]
+.br
+.B xgenie
+.I server
+[OPTIONS]
+.SH DESCRIPTION
+xGenie is a production-ready website and infrastructure reconnaissance platform
+for authorized defensive security operations.
+.SH OPTIONS
+.TP
+.B scan <target>
+Perform reconnaissance scan on target domain or IP
+.TP
+.B --full
+Perform full scan including XSS detection (slower)
+.TP
+.B --output, -o <file>
+Save results to JSON file
+.TP
+.B server
+Start web interface
+.TP
+.B --port <port>
+Specify server port (default: 5000)
+.SH EXAMPLES
+.TP
+Basic scan:
+.B xgenie scan example.com
+.TP
+Full scan with output:
+.B xgenie scan example.com --full --output results.json
+.TP
+Start web server:
+.B xgenie server --port 8080
+.SH LEGAL
+This tool is for AUTHORIZED USE ONLY. Users must obtain proper authorization
+before scanning any systems. Unauthorized access is illegal.
+.SH AUTHOR
+xGenie Team
+.SH SEE ALSO
+Full documentation: /usr/share/doc/xgenie/

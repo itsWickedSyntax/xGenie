@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=xGenie
+Comment=Security Intelligence Platform
+Exec=xgenie server
+Icon=security
+Terminal=true
+Categories=Network;Security;
+Keywords=security;reconnaissance;scanning;

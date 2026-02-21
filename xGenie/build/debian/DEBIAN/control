@@ -1,0 +1,19 @@
+Package: xgenie
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: all
+Depends: python3 (>= 3.8), python3-pip, nmap
+Maintainer: xGenie Team <team@xgenie.local>
+Description: Security Intelligence Platform
+ Production-ready website and infrastructure reconnaissance platform
+ for authorized defensive security operations.
+ .
+ Features:
+  - WHOIS & ownership intelligence
+  - Port scanning & service discovery
+  - Technology stack detection
+  - DNS intelligence
+  - Admin panel discovery
+  - Security analysis
+  - Advanced XSS detection engine

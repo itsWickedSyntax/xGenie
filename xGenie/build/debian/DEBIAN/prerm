@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+echo "Removing xGenie..."
+
+# Remove symlink
+if [ -L /usr/local/bin/xgenie ]; then
+    rm -f /usr/local/bin/xgenie
+fi

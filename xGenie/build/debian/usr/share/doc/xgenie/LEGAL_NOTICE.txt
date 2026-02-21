@@ -1,0 +1,54 @@
+═══════════════════════════════════════════════════════════════════════════
+                              LEGAL NOTICE
+                    xGenie Security Intelligence Platform
+═══════════════════════════════════════════════════════════════════════════
+
+AUTHORIZED USE ONLY
+
+This software is designed for authorized security testing, defensive security
+operations, and educational purposes ONLY.
+
+PERMITTED USES:
+✓ Security assessments of systems you own
+✓ Authorized penetration testing with written permission
+✓ Defensive security monitoring of your own infrastructure
+✓ Educational research with proper authorization
+✓ Compliance auditing of authorized systems
+
+PROHIBITED USES:
+✗ Scanning systems without explicit authorization
+✗ Unauthorized access attempts
+✗ Malicious reconnaissance
+✗ Any illegal activity
+
+LEGAL REQUIREMENTS:
+
+1. AUTHORIZATION: You MUST have explicit written permission from the system
+   owner before conducting any scans or security assessments.
+
+2. COMPLIANCE: Users must comply with all applicable laws including but not
+   limited to:
+   - Computer Fraud and Abuse Act (CFAA) - United States
+   - Computer Misuse Act - United Kingdom
+   - EU Cybersecurity Regulations
+   - Local and international cybersecurity laws
+
+3. RESPONSIBILITY: Users are solely responsible for their actions. The
+   developers and distributors of xGenie assume no liability for misuse.
+
+4. EVIDENCE: Maintain documentation of authorization for all security
+   assessments conducted with this tool.
+
+WARNING:
+
+Unauthorized access to computer systems is a criminal offense in most
+jurisdictions. Penalties may include:
+- Criminal prosecution
+- Significant fines
+- Imprisonment
+- Civil liability
+
+By using this software, you acknowledge that you have read, understood, and
+agree to comply with this legal notice and all applicable laws.
+
+═══════════════════════════════════════════════════════════════════════════

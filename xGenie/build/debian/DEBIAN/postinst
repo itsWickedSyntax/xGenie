@@ -1,0 +1,30 @@
+#!/bin/bash
+set -e
+
+echo "Installing xGenie dependencies..."
+
+# Install Python dependencies
+cd /usr/share/xgenie
+pip3 install -r requirements.txt --break-system-packages 2>/dev/null || pip3 install -r requirements.txt
+
+# Create symlink if not exists
+if [ ! -L /usr/local/bin/xgenie ]; then
+    ln -sf /usr/share/xgenie/xgenie.sh /usr/local/bin/xgenie
+fi
+
+echo ""
+echo "==========================================================="
+echo "  xGenie Security Intelligence Platform"
+echo "==========================================================="
+echo ""
+echo "[+] Installation complete!"
+echo ""
+echo "Usage:"
+echo "  xgenie scan <target>              # Basic scan"
+echo "  xgenie scan <target> --full       # Full scan with XSS"
+echo "  xgenie server --port 5000         # Web interface"
+echo ""
+echo "[!] AUTHORIZED USE ONLY"
+echo "    See /usr/share/doc/xgenie/LEGAL_NOTICE.txt"
+echo ""
+echo "==========================================================="

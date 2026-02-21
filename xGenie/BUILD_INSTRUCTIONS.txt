@@ -1,0 +1,20 @@
+
+===========================================================
+  xGenie Package Build Complete
+===========================================================
+
+Package structure created in: build/debian/
+
+To build the .deb package on Linux:
+  1. Transfer this directory to a Debian/Ubuntu system
+  2. Run: dpkg-deb --build build/debian dist/xgenie_1.0.0_all.deb
+
+To install:
+  sudo dpkg -i dist/xgenie_1.0.0_all.deb
+  sudo apt-get install -f  # Fix dependencies if needed
+
+To use:
+  xgenie scan example.com
+  xgenie server --port 5000
+
+===========================================================
